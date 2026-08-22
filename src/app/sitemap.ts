@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { TOOLS } from '@/lib/tools-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://car-finance.in.th';
+  const baseUrl = 'https://phonrod.com';
   const currentDate = new Date();
 
   // Root & Legal pages

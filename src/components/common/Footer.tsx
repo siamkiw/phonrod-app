@@ -14,10 +14,10 @@ export const Footer: React.FC = () => {
               <div className="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-lg">
                 <Car className="w-6 h-6" />
               </div>
-              <span className="font-bold text-xl text-white tracking-tight">AutoFin Hub Thailand</span>
+              <span className="font-extrabold text-xl text-white tracking-tight">PhonRod.com (ผ่อนรถ.คอม)</span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed pr-4">
-              ศูนย์รวมเครื่องมือคำนวณและวางแผนการเงินสำหรับคนมีรถในประเทศไทย คำนวณค่างวด ภาษี พ.ร.บ. ค่าโอน จุดคุ้มทุน EV และปิดยอดตามเกณฑ์ สคบ. ใหม่ ด้วยอัลกอริทึมแม่นยำตามข้อกฎหมายไทย 100%
+              ศูนย์รวมเครื่องมือคำนวณและช่วยเลือกทางเลือกทางการเงินที่เหมาะกับคุณที่สุด คำนวณค่างวด ภาษี พ.ร.บ. ค่าโอน จุดคุ้มทุน EV และปิดยอดตามเกณฑ์ สคบ. ใหม่ ด้วยอัลกอริทึมแม่นยำตามข้อกฎหมายไทย 100%
             </p>
             <div className="pt-2 flex flex-wrap gap-2 text-xs text-slate-400">
               <span className="inline-flex items-center bg-slate-800 px-2.5 py-1 rounded-md">
@@ -119,13 +119,13 @@ export const Footer: React.FC = () => {
         {/* Disclaimer Bar */}
         <div className="mt-12 pt-6 border-t border-slate-800/80 text-xs text-slate-500 leading-relaxed">
           <p>
-            *ข้อสงวนสิทธิ์: ผลการคำนวณจากทุกเครื่องมือบนเว็บไซต์นี้มีวัตถุประสงค์เพื่อเป็นข้อมูลประกอบการตัดสินใจเบื้องต้นเท่านั้น อัตราดอกเบี้ย เบี้ยประกันภัย ค่าธรรมเนียม และเงื่อนไขการอนุมัติสินเชื่อจริงอาจเปลี่ยนแปลงตามเกณฑ์ของแต่ละสถาบันการเงิน กรมการขนส่งทางบก หรือผู้ให้บริการประกันภัย
+            *ข้อสงวนสิทธิ์: ผลการคำนวณจากทุกเครื่องมือบนเว็บไซต์ PhonRod.com มีวัตถุประสงค์เพื่อเป็นข้อมูลประกอบการตัดสินใจเบื้องต้นเท่านั้น อัตราดอกเบี้ย เบี้ยประกันภัย ค่าธรรมเนียม และเงื่อนไขการอนุมัติสินเชื่อจริงอาจเปลี่ยนแปลงตามเกณฑ์ของแต่ละสถาบันการเงิน กรมการขนส่งทางบก หรือผู้ให้บริการประกันภัย
           </p>
         </div>
 
         {/* Bottom copyright */}
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} Thai Automotive Financial Hub. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} PhonRod.com (ผ่อนรถ.คอม). All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <span className="text-slate-400">พัฒนาเพื่อผู้ใช้รถยนต์ในประเทศไทย 🇹🇭</span>
           </div>

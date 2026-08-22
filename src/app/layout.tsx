@@ -5,13 +5,14 @@ import { Footer } from '@/components/common/Footer';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://car-finance.in.th'),
+  metadataBase: new URL('https://phonrod.com'),
   title: {
-    default: 'Thai Automotive Financial Hub | รวม 10 เครื่องมือคำนวณการเงินรถยนต์ครบวงจร',
-    template: '%s | AutoFin Hub Thailand',
+    default: 'PhonRod.com (ผ่อนรถ.คอม) | รวม 10 เครื่องมือคำนวณและวางแผนการเงินรถยนต์ครบวงจร',
+    template: '%s | PhonRod.com',
   },
-  description: 'ศูนย์รวม 10 เครื่องมือคำนวณการเงินรถยนต์ครบวงจร คำนวณค่างวด ภาษี พ.ร.บ. ค่าโอนรถมือสอง วงเงินกู้ตามเงินเดือน จุดคุ้มทุน EV และปิดยอดรถก่อนกำหนดตามเกณฑ์ สคบ. ใหม่',
+  description: 'PhonRod.com ศูนย์รวม 10 เครื่องมือคำนวณการเงินคนมีรถ คำนวณค่างวดรถยนต์ ตารางผ่อน Flat Rate & ดอกเบี้ยแท้จริง วงเงินกู้ตามเงินเดือน DSR ค่าโอนรถมือสอง ภาษี พ.ร.บ. และปิดยอดตามเกณฑ์ สคบ. ใหม่',
   keywords: [
+    'ผ่อนรถ',
     'คำนวณค่างวดรถ',
     'เงินเดือนซื้อรถ',
     'ภาษีรถยนต์',
@@ -21,11 +22,12 @@ export const metadata: Metadata = {
     'รีไฟแนนซ์รถยนต์',
     'ต้นทุนมีรถยนต์',
     'หารค่าน้ำมัน',
-    'การเงินรถยนต์',
+    'phonrod',
+    'phonrod.com',
   ],
-  authors: [{ name: 'AutoFin Hub Thailand Team' }],
-  creator: 'AutoFin Hub Thailand',
-  publisher: 'AutoFin Hub Thailand',
+  authors: [{ name: 'PhonRod.com Team' }],
+  creator: 'PhonRod.com',
+  publisher: 'PhonRod.com',
   formatDetection: {
     email: false,
     address: false,
@@ -34,14 +36,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'th_TH',
-    url: 'https://car-finance.in.th/',
-    siteName: 'Thai Automotive Financial Hub',
-    title: 'Thai Automotive Financial Hub | รวม 10 เครื่องมือคำนวณการเงินรถยนต์ครบวงจร',
-    description: 'คำนวณค่างวด ภาษี พ.ร.บ. ค่าโอนรถมือสอง วงเงินกู้ตามเงินเดือน และปิดยอดตามเกณฑ์ สคบ. ใหม่ แม่นยำ รวดเร็ว 100%',
+    url: 'https://phonrod.com/',
+    siteName: 'PhonRod.com (ผ่อนรถ.คอม)',
+    title: 'PhonRod.com | รวม 10 เครื่องมือคำนวณและวางแผนการเงินรถยนต์ครบวงจร',
+    description: 'ช่วยเลือกทางเลือกทางการเงินที่เหมาะกับคุณที่สุด คำนวณค่างวด ภาษี ค่าโอน วงเงินกู้ DSR และปิดยอด สคบ. ใหม่ แม่นยำ 100%',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Thai Automotive Financial Hub | 10 เครื่องมือการเงินรถยนต์',
+    title: 'PhonRod.com (ผ่อนรถ.คอม) | 10 เครื่องมือการเงินรถยนต์',
     description: 'วางแผนการเงินคนมีรถ คำนวณค่างวด ภาษี ค่าโอน ปิดยอดตามเกณฑ์ สคบ. ใหม่',
   },
   robots: {

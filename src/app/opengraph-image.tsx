@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
-export const alt = 'Thai Automotive Financial Hub | ศูนย์รวม 10 เครื่องมือการเงินรถยนต์';
+export const alt = 'PhonRod.com (ผ่อนรถ.คอม) | ศูนย์รวม 10 เครื่องมือการเงินรถยนต์';
 export const size = {
   width: 1200,
   height: 630,
@@ -41,23 +41,23 @@ export default async function Image() {
             🚗
           </div>
           <span style={{ fontSize: '36px', fontWeight: 800, color: 'white', letterSpacing: '-0.02em' }}>
-            AutoFin Hub Thailand
+            PhonRod.com (ผ่อนรถ.คอม)
           </span>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '900px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '950px' }}>
           <span
             style={{
-              fontSize: '56px',
+              fontSize: '54px',
               fontWeight: 800,
               color: '#ffffff',
               lineHeight: 1.15,
             }}
           >
-            ศูนย์รวม 10 เครื่องมือคำนวณการเงินรถยนต์ครบวงจร
+            เลือกทางเลือกทางการเงินที่เหมาะกับคุณที่สุด
           </span>
           <span style={{ fontSize: '26px', color: '#bae6fd', lineHeight: 1.4 }}>
-            ค่างวด • ภาษี • พ.ร.บ. • ค่าโอนมือสอง • วงเงินกู้ DSR • จุดคุ้มทุน EV • ปิดยอด สคบ. ใหม่
+            คำนวณค่างวด • เงินเดือน DSR • ภาษี • ค่าโอนมือสอง • จุดคุ้มทุน EV • ปิดยอด สคบ. ใหม่
           </span>
         </div>
 
@@ -74,8 +74,8 @@ export default async function Image() {
           }}
         >
           <span>✓ คำนวณฟรี แม่นยำ 100%</span>
-          <span>✓ มาตรฐานกฎหมายไทย 2567-2568</span>
-          <span>✓ car-finance.in.th</span>
+          <span>✓ กฎหมาย สคบ. & กรมการขนส่งทางบก</span>
+          <span>✓ https://phonrod.com</span>
         </div>
       </div>
     ),

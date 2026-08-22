@@ -17,7 +17,9 @@ import {
   CheckCircle2,
   AlertTriangle,
   Flame,
-  Clock
+  Clock,
+  ShieldCheck,
+  Award
 } from 'lucide-react';
 import { 
   calculateCarInstallment, 
@@ -91,23 +93,31 @@ export const CarInstallmentCalc: React.FC = () => {
     ? calcMode === 'forward'
       ? `${window.location.origin}/car-installment-calculator?price=${carPrice}&down=${downValue}&rate=${interestRate}&term=${loanTermMonths}`
       : `${window.location.origin}/car-installment-calculator?mode=reverse&budget=${monthlyBudget}&down=${reverseDownAmount}&term=${reverseTerm}`
-    : 'https://car-finance.in.th/car-installment-calculator';
+    : 'https://phonrod.com/car-installment-calculator';
 
-  const forwardSummaryText = `🚗 สรุปผลคำนวณค่างวดรถยนต์:
+  const forwardSummaryText = `🚗 สรุปผลคำนวณค่างวดรถยนต์ (PhonRod.com):
 - ราคารถ: ${formatCurrency(forwardResult.carPrice)}
 - เงินดาวน์: ${formatCurrency(forwardResult.downPaymentAmount)} (${forwardResult.downPaymentPercent.toFixed(1)}%)
 - ยอดจัดไฟแนนซ์: ${formatCurrency(forwardResult.loanPrincipal)}
 - ดอกเบี้ยคงที่: ${interestRate}% ต่อปี (ระยะเวลา ${loanTermMonths} งวด)
 - ค่างวดสุทธิ (รวม VAT 7%): ${formatCurrency(forwardResult.monthlyPayment)} / เดือน
 - ดอกเบี้ยรวมตลอดสัญญา: ${formatCurrency(forwardResult.totalInterest)}
-- ลิงก์ผลการคำนวณของคุณ: ${shareableUrl}`;
+- ตรวจสอบคำแนะนำทางเลือกที่คุ้มที่สุดได้ที่: ${shareableUrl}`;
 
-  const reverseSummaryText = `🎯 สรุปผลคำนวณงบผ่อนย้อนกลับ:
+  const reverseSummaryText = `🎯 สรุปผลคำนวณงบผ่อนย้อนกลับ (PhonRod.com):
 - งบผ่อนต่อเดือน: ${formatCurrency(monthlyBudget)} / เดือน
 - เงินดาวน์ที่มี: ${formatCurrency(reverseDownAmount)}
 - ช่วงราคารถที่ซื้อได้: ${formatCurrency(reverseResult.estimatedCarPriceMin)} - ${formatCurrency(reverseResult.estimatedCarPriceMax)} (ประมาณ ${formatCurrency(reverseResult.estimatedCarPriceMid)})
 - กลุ่มรถยนต์แนะนำ: ${reverseResult.carTierRecommendation}
 - ลิงก์ผลการคำนวณของคุณ: ${shareableUrl}`;
+
+  // Smart Decision Verdict Calculations
+  const term60Monthly = forwardResult.loanTermScenarios.find(t => t.termMonths === 60)?.monthlyPayment || forwardResult.monthlyPayment;
+  const term84Monthly = forwardResult.loanTermScenarios.find(t => t.termMonths === 84)?.monthlyPayment || forwardResult.monthlyPayment;
+  const term60Interest = forwardResult.loanTermScenarios.find(t => t.termMonths === 60)?.totalInterest || forwardResult.totalInterest;
+  const term84Interest = forwardResult.loanTermScenarios.find(t => t.termMonths === 84)?.totalInterest || forwardResult.totalInterest;
+  const interestSaved84vs60 = Math.max(0, term84Interest - term60Interest);
+  const monthlyDiff84vs60 = Math.max(0, term60Monthly - term84Monthly);
 
   return (
     <div className="space-y-10">
@@ -410,13 +420,47 @@ export const CarInstallmentCalc: React.FC = () => {
                   </button>
 
                   <ShareResultModal
-                    title="ผลคำนวณค่างวดรถยนต์ (Car Installment)"
+                    title="ผลคำนวณค่างวดรถยนต์ (PhonRod.com)"
                     summaryText={forwardSummaryText}
                   />
                 </div>
               </div>
 
               <AdBanner slot="in-article" />
+            </div>
+          </div>
+
+          {/* ================= CORE ADVISOR: BEST-FIT DECISION VERDICT ================= */}
+          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-indigo-950 text-white border border-indigo-800/80 shadow-lg space-y-4">
+            <div className="flex items-center space-x-2.5 text-amber-300 text-xs font-extrabold uppercase tracking-wider">
+              <Award className="w-5 h-5 text-amber-400" />
+              <span>PhonRod Decision Verdict: ทางเลือกที่เหมาะกับคุณที่สุด</span>
+            </div>
+            
+            <h3 className="text-xl sm:text-2xl font-extrabold text-white">
+              คำวินิจฉัยทางการเงิน: แผนการผ่อนที่คุ้มค่าที่สุดสำหรับรถคันนี้
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+                <span className="text-xs font-bold text-emerald-400 flex items-center space-x-1.5">
+                  <CheckCircle2 className="w-4 h-4" />
+                  <span>คำแนะนำระยะเวลาผ่อน (งวดที่เหมาะสม):</span>
+                </span>
+                <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                  แนะนำเลือก <strong>ผ่อน 60 งวด (5 ปี)</strong> ค่างวด {formatCurrency(term60Monthly)}/เดือน แทนการผ่อน 84 งวด เพราะช่วยหยุดการจ่ายดอกเบี้ยทิ้งฟรีถึง <strong>{formatCurrency(interestSaved84vs60)} บาท</strong> โดยค่างวดต่างกันเพียง <strong>{formatCurrency(monthlyDiff84vs60)} บาท/เดือน</strong>
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+                <span className="text-xs font-bold text-cyan-400 flex items-center space-x-1.5">
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>คำแนะนำเงินดาวน์ (ป้องกันหนี้ท่วมรถ):</span>
+                </span>
+                <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                  แนะนำวางเงินดาวน์ <strong>20% - 25% ({formatCurrency(carPrice * 0.20)} - {formatCurrency(carPrice * 0.25)})</strong> นอกจากจะผ่านไฟแนนซ์ง่ายไม่ต้องมีคนค้ำแล้ว ยังช่วยให้มูลค่าหนี้ไม่เกินราคารถในตลาดมือสอง
+                </p>
+              </div>
             </div>
           </div>
 
@@ -768,7 +812,7 @@ export const CarInstallmentCalc: React.FC = () => {
 
               <div className="mt-6 flex justify-end">
                 <ShareResultModal
-                  title="ผลคำนวณงบผ่อนย้อนกลับ (Reverse Budget)"
+                  title="ผลคำนวณงบผ่อนย้อนกลับ (PhonRod.com)"
                   summaryText={reverseSummaryText}
                 />
               </div>

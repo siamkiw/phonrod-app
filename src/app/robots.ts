@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://car-finance.in.th/sitemap.xml',
+    sitemap: 'https://phonrod.com/sitemap.xml',
   };
 }
