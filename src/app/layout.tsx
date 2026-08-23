@@ -73,12 +73,11 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* Google AdSense script placeholder */}
-        <Script
+        {/* Google AdSense Script */}
+        <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3665371202412168"
           crossOrigin="anonymous"
-          strategy="lazyOnload"
         />
       </head>
       <body className="font-sans min-h-screen flex flex-col bg-slate-50 text-slate-900">

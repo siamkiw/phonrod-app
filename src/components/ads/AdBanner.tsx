@@ -14,7 +14,7 @@ interface AdBannerProps {
 export const AdBanner: React.FC<AdBannerProps> = ({
   slot = 'in-article',
   className = '',
-  adClient = 'ca-pub-xxxxxxxxxxxxxxxx',
+  adClient = 'ca-pub-3665371202412168',
   adSlotId = '1234567890',
 }) => {
   // Determine dimensions and styling based on slot type
