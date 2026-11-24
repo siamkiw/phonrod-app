@@ -30,7 +30,7 @@ export const CarTaxCalc: React.FC = () => {
 - ค่า พ.ร.บ. บังคับ: ${formatCurrency(result.actFee, 2)}
 - ค่าตรวจสภาพ ตรอ.: ${formatCurrency(result.inspectionFee)} (ตรวจเมื่ออายุเกิน 7 ปี)
 - ยอดรวมสุทธิที่ต้องชำระ: ${formatCurrency(result.totalPayable, 2)}
-คำนวณฟรีที่: https://car-finance.in.th/car-tax-calculator`;
+คำนวณฟรีที่: https://phonrod.com/car-tax-calculator`;
 
   return (
     <div className="space-y-8">

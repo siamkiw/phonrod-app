@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   title: 'คำนวณเงินเดือนกับวงเงินกู้ซื้อรถยนต์ (DSR ไฟแนนซ์) ซื้อรถได้สูงสุดกี่บาท',
   description: 'เช็ควงเงินกู้ซื้อรถสูงสุดตามฐานเงินเดือน ประเมินสัดส่วนภาระหนี้ DSR กู้ผ่านง่ายโดยไม่ต้องมีคนค้ำประกัน รู้ราคารถที่เหมาะสมกับรายได้ทันที',
   alternates: {
-    canonical: 'https://car-finance.in.th/salary-car-affordability',
+    canonical: 'https://phonrod.com/salary-car-affordability',
   },
   keywords: ['เงินเดือนซื้อรถ', 'คำนวณวงเงินกู้รถ', 'DSR ไฟแนนซ์', 'เงินเดือน 20000 ซื้อรถอะไรได้', 'เงินเดือน 30000 กู้รถได้เท่าไหร่'],
   openGraph: {
     title: 'คำนวณเงินเดือนกับวงเงินกู้ซื้อรถยนต์ (DSR ไฟแนนซ์)',
     description: 'วิเคราะห์วงเงินกู้ซื้อรถสูงสุดตามฐานเงินเดือน ประเมินสัดส่วนภาระหนี้ DSR',
-    url: 'https://car-finance.in.th/salary-car-affordability',
+    url: 'https://phonrod.com/salary-car-affordability',
   },
 };
 
@@ -48,7 +48,7 @@ export default function SalaryAffordabilityPage() {
         webApp={{
           name: 'โปรแกรมคำนวณเงินเดือนกับวงเงินกู้ซื้อรถยนต์ (DSR ไฟแนนซ์)',
           description: 'ประเมินวงเงินกู้ซื้อรถสูงสุดตามฐานเงินเดือนและภาระหนี้เดิม DSR',
-          url: 'https://car-finance.in.th/salary-car-affordability',
+          url: 'https://phonrod.com/salary-car-affordability',
           applicationCategory: 'FinanceApplication',
           keywords: ['เงินเดือนซื้อรถ', 'DSR ไฟแนนซ์', 'คำนวณวงเงินกู้รถยนต์'],
         }}

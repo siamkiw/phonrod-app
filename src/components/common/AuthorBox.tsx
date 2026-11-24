@@ -15,7 +15,7 @@ export const AuthorBox: React.FC<AuthorBoxProps> = ({
       <div className="flex items-center space-x-2">
         <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0" />
         <span>
-          ตรวจสอบความถูกต้องสูตรและกฎหมายโดย <strong>ทีมงาน AutoFin</strong> (อัปเดตล่าสุด: {reviewedDate})
+          ตรวจสอบความถูกต้องสูตรและกฎหมายโดย <strong>ทีมงาน PhonRod.com</strong> (อัปเดตล่าสุด: {reviewedDate})
         </span>
       </div>
       <div className="text-[11px] text-slate-400">

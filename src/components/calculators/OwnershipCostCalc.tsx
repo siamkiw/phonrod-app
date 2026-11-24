@@ -35,7 +35,7 @@ export const OwnershipCostCalc: React.FC = () => {
 - รวมค่าใช้จ่าย 5 ปี: ${formatCurrency(result.fiveYearTotal)}
 - ต้นทุนเฉลี่ยต่อวัน: ${formatCurrency(result.dailyCost, 0)} / วัน
 - สัดส่วนเทียบกับเงินเดือน: ${result.salaryRatioPercent.toFixed(1)}% (${result.salaryVerdict})
-คำนวณฟรีที่: https://car-finance.in.th/car-ownership-cost`;
+คำนวณฟรีที่: https://phonrod.com/car-ownership-cost`;
 
   return (
     <div className="space-y-8">

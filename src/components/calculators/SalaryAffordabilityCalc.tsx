@@ -35,7 +35,7 @@ export const SalaryAffordabilityCalc: React.FC = () => {
 - ราคารถสูงสุดที่แนะนำ (ดาวน์ ${downPercent}%): ${formatCurrency(result.maxCarPrice)}
 - สถานะความปลอดภัย: ${result.safetyLabel}
 - คำแนะนำ: ${result.recommendation}
-คำนวณฟรีที่: https://car-finance.in.th/salary-car-affordability`;
+คำนวณฟรีที่: https://phonrod.com/salary-car-affordability`;
 
   return (
     <div className="space-y-8">

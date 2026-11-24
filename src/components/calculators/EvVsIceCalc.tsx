@@ -42,7 +42,7 @@ export const EvVsIceCalc: React.FC = () => {
 - ส่วนต่างราคารถ (EV - น้ำมัน): ${formatCurrency(result.carPriceDifference)}
 - ระยะเวลาคืนทุน: ${result.paybackYears !== null ? `${result.paybackYears.toFixed(1)} ปี` : 'ทันที'}
 - เงินประหยัดสะสมสุทธิใน 5 ปี: ${formatCurrency(result.fiveYearSavings)}
-คำนวณฟรีที่: https://car-finance.in.th/ev-vs-ice-calculator`;
+คำนวณฟรีที่: https://phonrod.com/ev-vs-ice-calculator`;
 
   return (
     <div className="space-y-8">

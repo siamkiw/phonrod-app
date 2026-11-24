@@ -29,7 +29,7 @@ export const CarEquityCalc: React.FC = () => {
 - มูลค่าสุทธิ (Equity): ${formatCurrency(result.netEquity)}
 - ผลลัพธ์: ${result.analysisNote}
 - เงินที่ผู้ซื้อต้องเตรียม (ดาวน์ + ค่าเปลี่ยนสัญญา + ค่างวดล่วงหน้า): ${formatCurrency(result.totalBuyerDownPaymentRequired)}
-คำนวณฟรีที่: https://car-finance.in.th/car-equity-calculator`;
+คำนวณฟรีที่: https://phonrod.com/car-equity-calculator`;
 
   return (
     <div className="space-y-8">

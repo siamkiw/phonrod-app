@@ -11,12 +11,12 @@ import { FileCheck } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'คำนวณค่าโอนรถยนต์มือสอง กรมการขนส่งทางบก อากรแสตมป์ 0.5% ถูกต้องแม่นยำ',
   description: 'คำนวณค่าธรรมเนียมโอนกรรมสิทธิ์รถยนต์มือสอง อากรแสตมป์ 0.5% (500 บาทต่อแสน) ค่าคำขอ ค่าตรวจสภาพ สรุปยอดเงินและเอกสารที่ต้องใช้ที่กรมขนส่ง',
-  alternates: { canonical: 'https://car-finance.in.th/car-transfer-fee-calculator' },
+  alternates: { canonical: 'https://phonrod.com/car-transfer-fee-calculator' },
   keywords: ['ค่าโอนรถยนต์มือสอง', 'อากรแสตมป์โอนรถ', 'ค่าธรรมเนียมกรมการขนส่ง'],
   openGraph: {
     title: 'คำนวณค่าโอนรถยนต์มือสอง กรมการขนส่งทางบก',
     description: 'คำนวณค่าอากรแสตมป์ 0.5% ค่าธรรมเนียมการโอน ค่าคำขอ และค่าตรวจสภาพรถ',
-    url: 'https://car-finance.in.th/car-transfer-fee-calculator',
+    url: 'https://phonrod.com/car-transfer-fee-calculator',
   },
 };
 
@@ -35,7 +35,7 @@ export default function CarTransferFeePage() {
         webApp={{
           name: 'โปรแกรมคำนวณค่าโอนรถยนต์มือสอง กรมการขนส่งทางบก',
           description: 'คำนวณค่าธรรมเนียมโอนรถ อากรแสตมป์ 0.5% ค่าคำขอ และค่าตรวจสภาพรถ',
-          url: 'https://car-finance.in.th/car-transfer-fee-calculator',
+          url: 'https://phonrod.com/car-transfer-fee-calculator',
           applicationCategory: 'FinanceApplication',
         }}
         faqs={faqs}

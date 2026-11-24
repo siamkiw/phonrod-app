@@ -5,8 +5,9 @@ import { SchemaMarkup } from '@/components/common/SchemaMarkup';
 import { ShieldCheck, Award, BookOpen, Users, CheckCircle2, Car } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'เกี่ยวกับเรา (About Us) | Thai Automotive Financial Hub',
-  description: 'พันธกิจและทีมงานผู้อยู่เบื้องหลัง Thai Automotive Financial Hub ศูนย์รวมเครื่องมือคำนวณการเงินรถยนต์ที่แม่นยำและถูกต้องตามกฎหมายไทย 100%',
+  title: 'เกี่ยวกับเรา (About Us)',
+  description: 'พันธกิจและทีมงานผู้อยู่เบื้องหลัง PhonRod.com ศูนย์รวมเครื่องมือคำนวณการเงินรถยนต์ที่แม่นยำและถูกต้องตามกฎหมายไทย 100%',
+  alternates: { canonical: 'https://phonrod.com/about-us' },
 };
 
 export default function AboutUsPage() {
@@ -20,7 +21,7 @@ export default function AboutUsPage() {
           <span>ความเป็นมา & มาตรฐานความถูกต้อง</span>
         </div>
         <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          เกี่ยวกับเรา: Thai Automotive Financial Hub
+          เกี่ยวกับเรา: PhonRod.com (ผ่อนรถ.คอม)
         </h1>
         <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
           เราคือกลุ่มวิศวกรซอฟต์แวร์และที่ปรึกษาด้านการเงินยานยนต์ที่มีเป้าหมายร่วมกันในการสร้าง <strong>"เครื่องมือการเงินสำหรับคนมีรถที่มีความโปร่งใส แม่นยำ และเป็นกลางที่สุดในประเทศไทย"</strong>
@@ -29,13 +30,13 @@ export default function AboutUsPage() {
 
       <div className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-sm space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
         <h2 className="text-xl font-bold text-slate-900">
-          ทำไมเราจึงสร้าง AutoFin Hub Thailand?
+          ทำไมเราจึงสร้าง PhonRod.com?
         </h2>
         <p>
           ในปัจจุบัน การซื้อขายรถยนต์และการขอสินเชื่อเช่าซื้อในประเทศไทยเต็มไปด้วยความซับซ้อน เช่น การคิดอัตราดอกเบี้ยคงที่ (Flat Rate) ที่แท้จริงแล้วมีต้นทุนสูงกว่าที่ระบุในสัญญาเกือบ 2 เท่า รวมถึงกฎหมายใหม่ของ สคบ. เกี่ยวกับสิทธิการรับส่วนลดดอกเบี้ยเมื่อปิดยอดก่อนกำหนด ซึ่งผู้บริโภคจำนวนมากยังไม่ทราบสิทธิของตนเอง
         </p>
         <p>
-          AutoFin Hub จึงพัฒนา 10 เครื่องมือคำนวณแบบ Instant Client-side ที่ทำงานรวดเร็วระดับเสี้ยววินาที โดยไม่เก็บข้อมูลส่วนบุคคลของผู้ใช้งาน และอ้างอิงสูตรตามข้อกำหนดของกฎหมายไทย 100%
+          PhonRod.com จึงพัฒนา 10 เครื่องมือคำนวณแบบ Instant Client-side ที่ทำงานรวดเร็วระดับเสี้ยววินาที โดยไม่เก็บข้อมูลส่วนบุคคลของผู้ใช้งาน และอ้างอิงสูตรตามข้อกำหนดของกฎหมายไทย 100%
         </p>
 
         <h3 className="text-lg font-bold text-slate-900 pt-4">

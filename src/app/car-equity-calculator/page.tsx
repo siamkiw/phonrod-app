@@ -11,12 +11,12 @@ import { Coins } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'คำนวณขายดาวน์รถยนต์ & มูลค่าหนี้คงเหลือไฟแนนซ์ (Car Equity Calculator)',
   description: 'เช็คมูลค่าสุทธิราคารถยนต์เทียบยอดหนี้ไฟแนนซ์คงเหลือ ประเมินว่าขายดาวน์ได้เงินสดกลับมา หรือต้องยกให้ผ่อนต่อฟรี',
-  alternates: { canonical: 'https://car-finance.in.th/car-equity-calculator' },
+  alternates: { canonical: 'https://phonrod.com/car-equity-calculator' },
   keywords: ['คำนวณขายดาวน์รถ', 'ขายรถติดไฟแนนซ์', 'หนี้ท่วมรถ'],
   openGraph: {
     title: 'คำนวณขายดาวน์รถยนต์ & มูลค่าหนี้คงเหลือไฟแนนซ์',
     description: 'เช็คมูลค่าสุทธิ (Equity) ราคารถเทียบหนี้คงค้าง ประเมินเงินสดขายดาวน์',
-    url: 'https://car-finance.in.th/car-equity-calculator',
+    url: 'https://phonrod.com/car-equity-calculator',
   },
 };
 
@@ -35,7 +35,7 @@ export default function CarEquityPage() {
         webApp={{
           name: 'โปรแกรมคำนวณขายดาวน์รถยนต์ & มูลค่าหนี้คงเหลือไฟแนนซ์',
           description: 'ประเมินมูลค่าสุทธิ Equity หนี้คงค้างไฟแนนซ์ และเงินสดขายดาวน์',
-          url: 'https://car-finance.in.th/car-equity-calculator',
+          url: 'https://phonrod.com/car-equity-calculator',
           applicationCategory: 'FinanceApplication',
         }}
         faqs={faqs}

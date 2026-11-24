@@ -1,13 +1,15 @@
 import React from 'react';
-import { Shield, Sparkles, CheckCircle2, ArrowUpRight, Percent, Zap, Wallet, Car } from 'lucide-react';
+import { Shield, Sparkles, CheckCircle2, ArrowUpRight, Zap } from 'lucide-react';
+import { AFFILIATE_LINKS, AffiliateType } from '@/lib/affiliate-links';
 
-export type AffiliateType = 'insurance' | 'refinance' | 'ev-charger' | 'used-car-loan';
+export type { AffiliateType };
 
 interface AffiliateCardProps {
   type?: AffiliateType;
   className?: string;
   customTitle?: string;
   customDescription?: string;
+  href?: string;
 }
 
 export const AffiliateCard: React.FC<AffiliateCardProps> = ({
@@ -15,7 +17,14 @@ export const AffiliateCard: React.FC<AffiliateCardProps> = ({
   className = '',
   customTitle,
   customDescription,
+  href,
 }) => {
+  const targetUrl = href ?? AFFILIATE_LINKS[type];
+
+  if (!targetUrl) {
+    return null;
+  }
+
   if (type === 'refinance') {
     return (
       <div className={`my-6 rounded-3xl bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-900 text-white p-6 sm:p-7 shadow-xl border border-blue-700/50 relative overflow-hidden ${className}`}>
@@ -29,25 +38,25 @@ export const AffiliateCard: React.FC<AffiliateCardProps> = ({
           {customTitle || 'ต้องการลดค่างวด หรือรับเงินสดก้อนโตจากรถคุณ?'}
         </h3>
         <p className="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
-          {customDescription || 'เปรียบเทียบข้อเสนอรีไฟแนนซ์และสินเชื่อจำนำทะเบียนรถยนต์กว่า 10 สถาบันการเงินชั้นนำ ดอกเบี้ยเริ่มต้น 0.29%/เดือน อนุมัติไว ไม่ต้องเช็คบูโร'}
+          {customDescription || 'เปรียบเทียบข้อเสนอรีไฟแนนซ์และสินเชื่อจำนำทะเบียนรถยนต์จากสถาบันการเงินชั้นนำ'}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-200 mb-5">
           <div className="flex items-center space-x-1.5">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-            <span>ผ่อนอยู่ก็กู้ได้ วงเงินสูงสุด 120%</span>
+            <span>ผ่อนอยู่ก็เช็ควงเงินประเมินได้</span>
           </div>
           <div className="flex items-center space-x-1.5">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-            <span>รับเงินสดเข้าบัญชีภายใน 1 วันทำการ</span>
+            <span>รู้ผลประเมินเบื้องต้นออนไลน์</span>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
           <a
-            href="https://car-finance.in.th/refinance-partner"
+            href={targetUrl}
             target="_blank"
-            rel="noopener noreferrer nofollow"
+            rel="noopener noreferrer nofollow sponsored"
             className="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-slate-950 font-bold text-sm shadow-lg hover:shadow-orange-500/20 transition-all group"
           >
             <span>เช็ควงเงินประเมินฟรีทันที</span>
@@ -72,16 +81,16 @@ export const AffiliateCard: React.FC<AffiliateCardProps> = ({
           {customTitle || 'ติดตั้งแท่นชาร์จรถยนต์ไฟฟ้าที่บ้าน มาตรฐาน กฟน./กฟภ.'}
         </h3>
         <p className="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
-          {customDescription || 'ชาร์จไฟบ้านช่วง Off-peak ประหยัดค่าน้ำมันลงกว่า 75% รับประกันงานติดตั้งและวงจรมาตรฐาน 3 ปีเต็ม พร้อมเดินสายเมนเฉพาะจุด'}
+          {customDescription || 'ชาร์จไฟบ้านช่วง Off-peak ประหยัดค่าพลังงานและเดินสายเมนเฉพาะจุดตามมาตรฐานความปลอดภัย'}
         </p>
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
           <a
-            href="https://car-finance.in.th/ev-charger-partner"
+            href={targetUrl}
             target="_blank"
-            rel="noopener noreferrer nofollow"
+            rel="noopener noreferrer nofollow sponsored"
             className="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-sm shadow-lg transition-all group"
           >
-            <span>รับแพ็กเกจติดตั้งพร้อมสำรวจหน้างานฟรี</span>
+            <span>ดูรายละเอียดแพ็กเกจติดตั้ง</span>
             <ArrowUpRight className="w-4 h-4 ml-1.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
         </div>
@@ -99,35 +108,35 @@ export const AffiliateCard: React.FC<AffiliateCardProps> = ({
       </div>
 
       <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-        {customTitle || 'เช็คเบี้ยประกันภัยรถยนต์ชั้น 1, 2+, 3+ รับส่วนลดสูงสุด 30%'}
+        {customTitle || 'เช็คเบี้ยประกันภัยรถยนต์ชั้น 1, 2+, 3+'}
       </h3>
       <p className="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
-        {customDescription || 'เปรียบเทียบราคาเบี้ยประกันจาก 16 บริษัทชั้นนำ เช่น วิริยะ, ทิพย, กรุงเทพประกันภัย ผ่อน 0% สูงสุด 10 เดือน ไม่ต้องใช้บัตรเครดิต'}
+        {customDescription || 'เปรียบเทียบแผนความคุ้มครองและราคาเบี้ยประกันจากบริษัทประกันภัยชั้นนำ'}
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-200 mb-5">
         <div className="flex items-center space-x-1.5">
           <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-          <span>คุ้มครองทันที พร้อมบริการช่วยเหลือ 24 ชม.</span>
+          <span>เช็คราคาเบื้องต้นออนไลน์ได้ทันที</span>
         </div>
         <div className="flex items-center space-x-1.5">
           <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-          <span>แถมฟรี พ.ร.บ. หรือบัตรเติมน้ำมันมูลค่า 500 บ.</span>
+          <span>เทียบแผนซ่อมห้างและซ่อมอู่ได้ชัดเจน</span>
         </div>
       </div>
 
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
         <a
-          href="https://car-finance.in.th/insurance-partner"
+          href={targetUrl}
           target="_blank"
-          rel="noopener noreferrer nofollow"
+          rel="noopener noreferrer nofollow sponsored"
           className="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-bold text-sm shadow-lg hover:shadow-emerald-500/20 transition-all group"
         >
           <span>เปรียบเทียบราคาเบี้ยประกันเลย</span>
           <ArrowUpRight className="w-4 h-4 ml-1.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </a>
         <span className="text-[11px] text-slate-400 text-center sm:text-left">
-          *รู้ราคาภายใน 30 วินาที ไม่มีข้อผูกมัด
+          *ไม่มีข้อผูกมัดในการเช็คราคาเบื้องต้น
         </span>
       </div>
     </div>

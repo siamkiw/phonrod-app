@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   title: 'คำนวณปิดยอดรถก่อนกำหนด รับส่วนลดดอกเบี้ย 60% 70% 100% ตามเกณฑ์ สคบ. ใหม่',
   description: 'คำนวณส่วนลดดอกเบี้ยคงเหลือเมื่อโปะปิดค่างวดรถยนต์ก่อนกำหนด ตามประกาศคณะกรรมการว่าด้วยสัญญา สคบ. ฉบับใหม่ รู้ยอดจ่ายสุทธิและเงินที่ประหยัดได้ทันที',
   alternates: {
-    canonical: 'https://car-finance.in.th/car-loan-early-payoff',
+    canonical: 'https://phonrod.com/car-loan-early-payoff',
   },
   keywords: ['ปิดยอดรถก่อนกำหนด', 'ส่วนลดดอกเบี้ย สคบ', 'โปะค่างวดรถ', 'ปิดไฟแนนซ์ก่อนกำหนด', 'ส่วนลดดอกเบี้ยรถ 100%'],
   openGraph: {
     title: 'คำนวณปิดยอดรถก่อนกำหนด รับส่วนลดดอกเบี้ยตามเกณฑ์ สคบ. ใหม่',
     description: 'คำนวณส่วนลดดอกเบี้ยคงเหลือ 60% 70% และ 100% ตามกฎหมาย สคบ. ฉบับล่าสุด',
-    url: 'https://car-finance.in.th/car-loan-early-payoff',
+    url: 'https://phonrod.com/car-loan-early-payoff',
   },
 };
 
@@ -44,7 +44,7 @@ export default function EarlyPayoffPage() {
         webApp={{
           name: 'โปรแกรมคำนวณปิดยอดรถก่อนกำหนด รับส่วนลดดอกเบี้ยตามเกณฑ์ สคบ. ใหม่',
           description: 'คำนวณส่วนลดดอกเบี้ยคงเหลือ 60% 70% 100% และยอดเงินสุทธิปิดบัญชีไฟแนนซ์',
-          url: 'https://car-finance.in.th/car-loan-early-payoff',
+          url: 'https://phonrod.com/car-loan-early-payoff',
           applicationCategory: 'FinanceApplication',
           keywords: ['ปิดยอดรถก่อนกำหนด', 'ส่วนลดดอกเบี้ย สคบ', 'โปะปิดค่างวดรถ'],
         }}

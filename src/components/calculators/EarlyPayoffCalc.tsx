@@ -30,7 +30,7 @@ export const EarlyPayoffCalc: React.FC = () => {
 - ดอกเบี้ยที่ได้รับการยกเว้น: ${formatCurrency(result.interestDiscountAmount)}
 - ยอดเงินสุทธิที่ต้องจ่ายปิดบัญชีจริง: ${formatCurrency(result.totalPayoffAmount)}
 - เงินที่ประหยัดได้เทียบกับผ่อนต่อ: ${formatCurrency(result.savingsFromPayoff)}
-คำนวณฟรีที่: https://car-finance.in.th/car-loan-early-payoff`;
+คำนวณฟรีที่: https://phonrod.com/car-loan-early-payoff`;
 
   return (
     <div className="space-y-8">

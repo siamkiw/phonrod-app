@@ -33,7 +33,7 @@ export const RefinanceCalc: React.FC = () => {
 - ผ่อนเบาลง: ${result.monthlySavings > 0 ? `${formatCurrency(result.monthlySavings)}/เดือน` : 'ไม่ลดลง'}
 - เงินสดก้อนเหลือเข้ากระเป๋า (Cashback): ${formatCurrency(result.cashbackAmount)}
 - บทวิเคราะห์: ${result.verdict}
-คำนวณฟรีที่: https://car-finance.in.th/car-refinance-calculator`;
+คำนวณฟรีที่: https://phonrod.com/car-refinance-calculator`;
 
   return (
     <div className="space-y-8">

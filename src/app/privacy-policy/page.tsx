@@ -3,8 +3,9 @@ import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'นโยบายความเป็นส่วนตัว (Privacy Policy) | Thai Automotive Financial Hub',
-  description: 'นโยบายความเป็นส่วนตัว การจัดการคุกกี้ และมาตรฐานความปลอดภัยของข้อมูลบน Thai Automotive Financial Hub ตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA)',
+  title: 'นโยบายความเป็นส่วนตัว (Privacy Policy)',
+  description: 'นโยบายความเป็นส่วนตัว การจัดการคุกกี้ และมาตรฐานความปลอดภัยของข้อมูลบน PhonRod.com ตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA)',
+  alternates: { canonical: 'https://phonrod.com/privacy-policy' },
 };
 
 export default function PrivacyPolicyPage() {
@@ -24,7 +25,7 @@ export default function PrivacyPolicyPage() {
       <div className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-sm space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
         <h2 className="text-lg font-bold text-slate-900">1. การไม่เก็บรวบรวมข้อมูลทางการเงินส่วนบุคคล</h2>
         <p>
-          Thai Automotive Financial Hub ให้ความสำคัญสูงสุดกับความเป็นส่วนตัวของคุณ เครื่องมือคำนวณทั้ง 10 ตัวบนเว็บไซต์ทำงานด้วยเทคโนโลยี <strong>Client-side Processing</strong> ข้อมูลตัวเลขรายได้ ราคารถ ยอดหนี้ หรือค่างวดที่คุณกรอกเพื่อคำนวณ จะถูกประมวลผลบนเบราว์เซอร์ของคุณโดยตรง และไม่มีการส่งกลับมาจัดเก็บบนเซิร์ฟเวอร์ของเรา
+          PhonRod.com ให้ความสำคัญสูงสุดกับความเป็นส่วนตัวของคุณ เครื่องมือคำนวณทั้ง 10 ตัวบนเว็บไซต์ทำงานด้วยเทคโนโลยี <strong>Client-side Processing</strong> ข้อมูลตัวเลขรายได้ ราคารถ ยอดหนี้ หรือค่างวดที่คุณกรอกเพื่อคำนวณ จะถูกประมวลผลบนเบราว์เซอร์ของคุณโดยตรง และไม่มีการส่งกลับมาจัดเก็บบนเซิร์ฟเวอร์ของเรา
         </p>
 
         <h2 className="text-lg font-bold text-slate-900">2. คุกกี้และเทคโนโลยีการติดตาม (Cookies & Tracking)</h2>
@@ -44,7 +45,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-lg font-bold text-slate-900">5. การติดต่อเรา</h2>
         <p>
-          หากคุณมีคำถามหรือข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ สามารถติดต่อทีมงานได้ที่อีเมล: <strong className="text-brand-700">contact@car-finance.in.th</strong>
+          หากคุณมีคำถามหรือข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ สามารถติดต่อทีมงานได้ที่อีเมล: <strong className="text-brand-700">contact@phonrod.com</strong>
         </p>
       </div>
     </div>

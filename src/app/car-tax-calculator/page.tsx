@@ -11,12 +11,12 @@ import { ShieldAlert } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'คำนวณภาษีรถยนต์ประจำปี + พ.ร.บ. + ค่าตรวจ ตรอ. (อัปเดตอัตราภาษี 2567-2568)',
   description: 'คำนวณภาษีรถยนต์ประจำปีตาม ซีซี และน้ำหนัก ส่วนลดอายุรถปีที่ 6-10+ พร้อมคิดค่า พ.ร.บ. บังคับ และตรวจสภาพ ตรอ.',
-  alternates: { canonical: 'https://car-finance.in.th/car-tax-calculator' },
+  alternates: { canonical: 'https://phonrod.com/car-tax-calculator' },
   keywords: ['คำนวณภาษีรถยนต์', 'ต่อภาษีรถยนต์กี่บาท', 'ภาษีรถยนต์ตาม cc', 'ค่าพรบรถยนต์'],
   openGraph: {
     title: 'คำนวณภาษีรถยนต์ประจำปี + พ.ร.บ. + ค่าตรวจ ตรอ.',
     description: 'คิดภาษีรถยนต์ตามขนาด ซีซี / น้ำหนัก ส่วนลดอายุรถปีที่ 6-10+ พร้อม พ.ร.บ. และ ตรอ.',
-    url: 'https://car-finance.in.th/car-tax-calculator',
+    url: 'https://phonrod.com/car-tax-calculator',
   },
 };
 
@@ -35,7 +35,7 @@ export default function CarTaxPage() {
         webApp={{
           name: 'โปรแกรมคำนวณภาษีรถยนต์ประจำปี + พ.ร.บ. + ค่าตรวจ ตรอ.',
           description: 'คำนวณภาษีรถตามขนาด ซีซี น้ำหนัก ส่วนลดอายุรถ 6-10+ พ.ร.บ. และ ตรอ.',
-          url: 'https://car-finance.in.th/car-tax-calculator',
+          url: 'https://phonrod.com/car-tax-calculator',
           applicationCategory: 'FinanceApplication',
         }}
         faqs={faqs}

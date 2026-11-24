@@ -11,12 +11,12 @@ import { Zap } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'คำนวณจุดคุ้มทุน รถยนต์ไฟฟ้า EV vs รถน้ำมัน ICE วิ่งปีละเท่าไหร่ถึงคุ้ม?',
   description: 'เปรียบเทียบต้นทุนต่อกิโลเมตร ค่าไฟ TOU Off-peak ค่าบำรุงรักษา และระยะเวลาคืนทุนจากส่วนต่างราคารถยนต์ไฟฟ้า',
-  alternates: { canonical: 'https://car-finance.in.th/ev-vs-ice-calculator' },
+  alternates: { canonical: 'https://phonrod.com/ev-vs-ice-calculator' },
   keywords: ['จุดคุ้มทุน EV', 'EV vs รถน้ำมัน', 'เปรียบเทียบค่าใช้จ่ายรถไฟฟ้า'],
   openGraph: {
     title: 'คำนวณจุดคุ้มทุน รถยนต์ไฟฟ้า EV vs รถน้ำมัน ICE',
     description: 'วิเคราะห์ต้นทุนต่อ กม. ค่าไฟ TOU ค่าบำรุงรักษา และระยะเวลาคืนทุน',
-    url: 'https://car-finance.in.th/ev-vs-ice-calculator',
+    url: 'https://phonrod.com/ev-vs-ice-calculator',
   },
 };
 
@@ -35,7 +35,7 @@ export default function EvVsIcePage() {
         webApp={{
           name: 'โปรแกรมคำนวณจุดคุ้มทุน รถยนต์ไฟฟ้า EV vs รถน้ำมัน ICE',
           description: 'เปรียบเทียบต้นทุนพลังงาน ค่าชาร์จ TOU ค่าบำรุงรักษา และระยะเวลาคืนทุน',
-          url: 'https://car-finance.in.th/ev-vs-ice-calculator',
+          url: 'https://phonrod.com/ev-vs-ice-calculator',
           applicationCategory: 'FinanceApplication',
         }}
         faqs={faqs}

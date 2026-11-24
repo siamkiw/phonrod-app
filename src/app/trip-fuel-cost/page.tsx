@@ -11,12 +11,12 @@ import { Fuel } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'คำนวณค่าน้ำมันเดินทาง & หารค่าทริปท่องเที่ยว เฉลี่ยต่อคนอย่างแม่นยำ',
   description: 'โปรแกรมคำนวณค่าน้ำมันรถยนต์ วางแผนทริปท่องเที่ยวทางไกล คำนวณลิตรที่ใช้ ค่าทางด่วน และหารค่าใช้จ่ายเฉลี่ยต่อคน',
-  alternates: { canonical: 'https://car-finance.in.th/trip-fuel-cost' },
+  alternates: { canonical: 'https://phonrod.com/trip-fuel-cost' },
   keywords: ['คำนวณค่าน้ำมัน', 'หารค่าน้ำมัน', 'ค่าน้ำมันไปต่างจังหวัด'],
   openGraph: {
     title: 'คำนวณค่าน้ำมันเดินทาง & หารค่าทริปท่องเที่ยว',
     description: 'คำนวณค่าน้ำมัน ค่าทางด่วน ลิตรที่ใช้ และหารเฉลี่ยค่าทริปต่อคน',
-    url: 'https://car-finance.in.th/trip-fuel-cost',
+    url: 'https://phonrod.com/trip-fuel-cost',
   },
 };
 
@@ -35,7 +35,7 @@ export default function TripFuelCostPage() {
         webApp={{
           name: 'โปรแกรมคำนวณค่าน้ำมันเดินทาง & หารค่าทริปท่องเที่ยว',
           description: 'คำนวณค่าน้ำมัน ค่าทางด่วน ลิตรที่ใช้ และหารเฉลี่ยค่าทริปต่อคน',
-          url: 'https://car-finance.in.th/trip-fuel-cost',
+          url: 'https://phonrod.com/trip-fuel-cost',
           applicationCategory: 'TravelApplication',
         }}
         faqs={faqs}

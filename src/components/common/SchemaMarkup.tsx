@@ -26,7 +26,7 @@ interface SchemaMarkupProps {
 }
 
 export const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ webApp, faqs, breadcrumbs }) => {
-  const schemaList: any[] = [];
+  const schemaList: Record<string, unknown>[] = [];
 
   if (webApp) {
     schemaList.push({
@@ -71,13 +71,13 @@ export const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ webApp, faqs, breadc
           '@type': 'ListItem',
           position: 1,
           name: 'หน้าแรก',
-          item: 'https://car-finance.in.th/',
+          item: 'https://phonrod.com/',
         },
         ...breadcrumbs.map((item, idx) => ({
           '@type': 'ListItem',
           position: idx + 2,
           name: item.name,
-          item: item.url.startsWith('http') ? item.url : `https://car-finance.in.th${item.url}`,
+          item: item.url.startsWith('http') ? item.url : `https://phonrod.com${item.url}`,
         })),
       ],
     });

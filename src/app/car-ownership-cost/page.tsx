@@ -11,12 +11,12 @@ import { TrendingUp } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'คำนวณต้นทุนการมีรถจริงต่อปี (Total Cost of Ownership - TCO) เผยค่าใช้จ่ายแฝง',
   description: 'คำนวณค่าใช้จ่ายแท้จริงของการมีรถยนต์ 1 คัน รวมค่างวด ค่าน้ำมัน ประกันภัย เช็คระยะ ภาษี และที่จอดรถ เผยต้นทุนเฉลี่ยต่อวันและต่อปี',
-  alternates: { canonical: 'https://car-finance.in.th/car-ownership-cost' },
+  alternates: { canonical: 'https://phonrod.com/car-ownership-cost' },
   keywords: ['ต้นทุนการมีรถยนต์', 'ค่าใช้จ่ายรถยนต์ต่อเดือน', 'TCO รถยนต์', 'มีรถ 1 คันจ่ายปีละเท่าไหร่'],
   openGraph: {
     title: 'คำนวณต้นทุนการมีรถจริงต่อปี (Total Cost of Ownership)',
     description: 'คำนวณค่าใช้จ่ายแฝง ค่างวด น้ำมัน ประกันภัย เช็คระยะ เผยต้นทุนแท้จริงต่อวัน/ต่อปี',
-    url: 'https://car-finance.in.th/car-ownership-cost',
+    url: 'https://phonrod.com/car-ownership-cost',
   },
 };
 
@@ -35,7 +35,7 @@ export default function CarOwnershipCostPage() {
         webApp={{
           name: 'โปรแกรมคำนวณต้นทุนการมีรถจริงต่อปี (Total Cost of Ownership)',
           description: 'วิเคราะห์ค่าใช้จ่ายรถยนต์ ค่างวด น้ำมัน ประกัน เช็คระยะ ภาษี และต้นทุน 5 ปี',
-          url: 'https://car-finance.in.th/car-ownership-cost',
+          url: 'https://phonrod.com/car-ownership-cost',
           applicationCategory: 'FinanceApplication',
         }}
         faqs={faqs}

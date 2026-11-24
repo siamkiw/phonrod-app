@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   title: 'โปรแกรมคำนวณค่างวดรถยนต์ ตารางผ่อน Flat Rate & ดอกเบี้ยแท้จริง (รวม VAT 7%)',
   description: 'คำนวณค่างวดรถยนต์ป้ายแดงและมือสอง แม่นยำ 100% คิดยอดจัด ดอกเบี้ยคงที่ VAT 7% พร้อมตารางแจกแจงค่างวดรายเดือนและดอกเบี้ยแท้จริง Effective Rate',
   alternates: {
-    canonical: 'https://car-finance.in.th/car-installment-calculator',
+    canonical: 'https://phonrod.com/car-installment-calculator',
   },
   keywords: ['คำนวณค่างวดรถ', 'ตารางผ่อนรถ', 'คิดค่างวดรถยนต์', 'ยอดจัดไฟแนนซ์', 'ดอกเบี้ยรถยนต์ Flat rate', 'คำนวณผ่อนรถยนต์'],
   openGraph: {
     title: 'โปรแกรมคำนวณค่างวดรถยนต์ ตารางผ่อน Flat Rate & ดอกเบี้ยแท้จริง',
     description: 'คำนวณค่างวดรถยนต์ ยอดจัด ดอกเบี้ยรวม VAT 7% พร้อมตารางผ่อนชำระละเอียด',
-    url: 'https://car-finance.in.th/car-installment-calculator',
+    url: 'https://phonrod.com/car-installment-calculator',
   },
 };
 
@@ -52,7 +52,7 @@ export default function CarInstallmentPage() {
         webApp={{
           name: 'โปรแกรมคำนวณค่างวดรถยนต์ ตารางผ่อน Flat Rate & ดอกเบี้ยแท้จริง',
           description: 'คำนวณค่างวดรถยนต์ป้ายแดงและมือสอง คิดยอดจัด ดอกเบี้ยคงที่ VAT 7% พร้อมตารางผ่อนชำระ',
-          url: 'https://car-finance.in.th/car-installment-calculator',
+          url: 'https://phonrod.com/car-installment-calculator',
           applicationCategory: 'FinanceApplication',
           keywords: ['คำนวณค่างวดรถ', 'ตารางผ่อนรถ', 'ดอกเบี้ยคงที่', 'vat 7% ค่างวด'],
         }}

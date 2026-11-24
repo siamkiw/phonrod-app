@@ -28,7 +28,7 @@ export const TransferFeeCalc: React.FC = () => {
 - ค่าคำขอ: ${formatCurrency(result.applicationFee)}
 - ค่าตรวจสภาพรถ: ${formatCurrency(result.inspectionFee)}
 - ยอดรวมที่ต้องเตรียมไปจ่ายที่ขนส่ง: ${formatCurrency(result.totalWithOptional)}
-คำนวณฟรีที่: https://car-finance.in.th/car-transfer-fee-calculator`;
+คำนวณฟรีที่: https://phonrod.com/car-transfer-fee-calculator`;
 
   return (
     <div className="space-y-8">

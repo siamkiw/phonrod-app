@@ -2,10 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Header } from '@/components/common/Header';
 import { Footer } from '@/components/common/Footer';
-import Script from 'next/script';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://phonrod.com'),
+  alternates: {
+    canonical: 'https://phonrod.com',
+  },
   title: {
     default: 'PhonRod.com (ผ่อนรถ.คอม) | รวม 10 เครื่องมือคำนวณและวางแผนการเงินรถยนต์ครบวงจร',
     template: '%s | PhonRod.com',
@@ -73,15 +75,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-      </head>
-      <body className="font-sans min-h-screen flex flex-col bg-slate-50 text-slate-900">
-        {/* Google AdSense Script */}
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3665371202412168"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
+      </head>
+      <body className="font-sans min-h-screen flex flex-col bg-slate-50 text-slate-900">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

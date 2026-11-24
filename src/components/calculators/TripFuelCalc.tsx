@@ -34,7 +34,7 @@ export const TripFuelCalc: React.FC = () => {
 - ค่าทางด่วนรวม: ${formatCurrency(result.totalTollFee)}
 - รวมค่าใช้จ่ายการเดินทางทั้งทริป: ${formatCurrency(result.totalTripExpense)}
 - เฉลี่ยจ่ายคนละ: ${formatCurrency(result.costPerPerson, 0)} บาท (${passengers} คน)
-คำนวณฟรีที่: https://car-finance.in.th/trip-fuel-cost`;
+คำนวณฟรีที่: https://phonrod.com/trip-fuel-cost`;
 
   return (
     <div className="space-y-8">

@@ -11,12 +11,12 @@ import { RefreshCw } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'คำนวณรีไฟแนนซ์รถยนต์ & สินเชื่อจำนำทะเบียนรถ ลดค่างวด รับเงินสดก้อนโต',
   description: 'คำนวณรีไฟแนนซ์รถยนต์ที่ยังผ่อนไม่หมด เปรียบเทียบดอกเบี้ยใหม่ ขยายงวดเพื่อลดภาระค่างวดต่อเดือน หรือประเมินเงินสดคงเหลือ Cashback',
-  alternates: { canonical: 'https://car-finance.in.th/car-refinance-calculator' },
+  alternates: { canonical: 'https://phonrod.com/car-refinance-calculator' },
   keywords: ['รีไฟแนนซ์รถยนต์', 'สินเชื่อจำนำทะเบียน', 'ลดค่างวดรถ'],
   openGraph: {
     title: 'คำนวณรีไฟแนนซ์รถยนต์ & สินเชื่อจำนำทะเบียนรถ',
     description: 'คำนวณรีไฟแนนซ์ ลดค่างวด ขยายงวด และประเมินเงินสดคงเหลือ Cashback',
-    url: 'https://car-finance.in.th/car-refinance-calculator',
+    url: 'https://phonrod.com/car-refinance-calculator',
   },
 };
 
@@ -35,7 +35,7 @@ export default function CarRefinancePage() {
         webApp={{
           name: 'โปรแกรมคำนวณรีไฟแนนซ์รถยนต์ & สินเชื่อจำนำทะเบียน',
           description: 'เปรียบเทียบสัญญาเดิมและสัญญาใหม่ ลดค่างวด และคำนวณเงินสด Cashback',
-          url: 'https://car-finance.in.th/car-refinance-calculator',
+          url: 'https://phonrod.com/car-refinance-calculator',
           applicationCategory: 'FinanceApplication',
         }}
         faqs={faqs}
