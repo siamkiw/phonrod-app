@@ -19,9 +19,11 @@ import {
   ShieldCheck,
   CheckCircle2,
   SlidersHorizontal,
-  Flame
+  Flame,
+  BookOpen
 } from 'lucide-react';
 import { TOOLS, CATEGORIES, ToolMetadata } from '@/lib/tools-data';
+import { GUIDES } from '@/lib/guides-data';
 import { AdBanner } from '@/components/ads/AdBanner';
 import { FAQSection } from '@/components/common/FAQSection';
 import { SchemaMarkup } from '@/components/common/SchemaMarkup';
@@ -97,7 +99,7 @@ export default function HomePage() {
         <div className="max-w-3xl space-y-6 relative z-10">
           <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur px-3.5 py-1.5 rounded-full text-xs font-semibold text-brand-200 border border-white/10">
             <Sparkles className="w-4 h-4 text-amber-300" />
-            <span>อัปเดตเกณฑ์การเงิน & ภาษีรถยนต์ 2567-2568</span>
+            <span>อัปเดตเกณฑ์การเงิน & ภาษีรถยนต์ 2569</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
@@ -220,6 +222,54 @@ export default function HomePage() {
             </div>
           </Link>
         ))}
+      </section>
+
+      {/* Decision Guides Section */}
+      <section className="space-y-5">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+          <div>
+            <span className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-brand-600">
+              <BookOpen className="w-3.5 h-3.5 mr-1.5" />
+              คู่มือช่วยตัดสินใจทางการเงิน
+            </span>
+            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
+              ทางเลือกไหนเหมาะกับคุณที่สุด? เทียบตัวเลขจริงก่อนตัดสินใจ
+            </h2>
+          </div>
+          <Link
+            href="/guides"
+            className="inline-flex items-center text-sm font-bold text-brand-600 hover:text-brand-700"
+          >
+            <span>ดูคู่มือทั้งหมด</span>
+            <ArrowRight className="w-4 h-4 ml-1" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {GUIDES.map((guide) => (
+            <Link
+              key={guide.slug}
+              href={`/guides/${guide.slug}`}
+              className="group bg-white rounded-3xl border border-slate-200 p-6 shadow-sm hover:shadow-md hover:border-brand-300 transition-all flex flex-col justify-between space-y-4"
+            >
+              <div className="space-y-2.5">
+                <span className="inline-block text-[11px] font-bold text-brand-700 bg-brand-50 px-2.5 py-0.5 rounded-full">
+                  {guide.category}
+                </span>
+                <h3 className="text-base font-bold text-slate-900 group-hover:text-brand-600 transition-colors leading-snug">
+                  {guide.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
+                  {guide.description}
+                </p>
+              </div>
+              <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-600">
+                <span>อ่าน {guide.readTime}</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          ))}
+        </div>
       </section>
 
       {/* Deep Dive Article: Complete Guide to Car Finance in Thailand (600+ words SEO) */}

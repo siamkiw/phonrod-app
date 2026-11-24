@@ -76,7 +76,7 @@ export default function CarInstallmentPage() {
       <CarInstallmentCalc />
 
       <AuthorBox
-        reviewedDate="สิงหาคม 2567"
+        reviewedDate="พฤศจิกายน 2569"
         sourceLaw="พระราชบัญญัติคุ้มครองผู้บริโภค และ ประมวลรัษฎากรว่าด้วยภาษีมูลค่าเพิ่มสัญญาเช่าซื้อ"
       />
 

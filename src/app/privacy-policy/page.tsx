@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
           นโยบายความเป็นส่วนตัว (Privacy Policy)
         </h1>
         <p className="text-xs sm:text-sm text-slate-500">
-          มีผลบังคับใช้ตั้งแต่วันที่: 1 มกราคม 2567 (อัปเดตล่าสุด: สิงหาคม 2567)
+          มีผลบังคับใช้ตั้งแต่วันที่: 1 มกราคม 2567 (อัปเดตล่าสุด: พฤศจิกายน 2569)
         </p>
       </div>
 

@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="pt-2 flex flex-wrap gap-2 text-xs text-slate-400">
               <span className="inline-flex items-center bg-slate-800 px-2.5 py-1 rounded-md">
-                <ShieldCheck className="w-3.5 h-3.5 mr-1 text-emerald-400" /> อัปเดตกฎหมาย สคบ. 2566-2568
+                <ShieldCheck className="w-3.5 h-3.5 mr-1 text-emerald-400" /> อัปเดตกฎหมาย สคบ. 2566-2569
               </span>
               <span className="inline-flex items-center bg-slate-800 px-2.5 py-1 rounded-md">
                 <ShieldCheck className="w-3.5 h-3.5 mr-1 text-blue-400" /> อัตราภาษี กรมการขนส่งทางบก
@@ -98,8 +98,18 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li className="pt-2 border-t border-slate-800">
+                <Link href="/guides" className="text-slate-300 hover:text-white transition-colors block font-medium">
+                  คู่มือตัดสินใจซื้อรถ (Guides)
+                </Link>
+              </li>
+              <li>
                 <Link href="/about-us" className="text-slate-400 hover:text-white transition-colors block">
                   เกี่ยวกับเรา (About Us)
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-slate-400 hover:text-white transition-colors block">
+                  ติดต่อเรา (Contact)
                 </Link>
               </li>
               <li>

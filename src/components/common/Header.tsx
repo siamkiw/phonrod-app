@@ -83,6 +83,13 @@ export const Header: React.FC = () => {
               ปิดยอด สคบ.
             </Link>
 
+            <Link 
+              href="/guides" 
+              className="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-brand-600 hover:bg-slate-50 rounded-xl transition-colors"
+            >
+              คู่มือตัดสินใจ
+            </Link>
+
             {/* Dropdown for other tools */}
             <div className="relative">
               <button
@@ -156,6 +163,22 @@ export const Header: React.FC = () => {
               </span>
             </Link>
           ))}
+          <div className="pt-2 border-t border-slate-100 space-y-1">
+            <Link
+              href="/guides"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2.5 rounded-xl hover:bg-slate-50 text-slate-800 text-sm font-semibold transition-colors"
+            >
+              คู่มือตัดสินใจซื้อรถ & ผ่อนรถ
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2.5 rounded-xl hover:bg-slate-50 text-slate-600 text-sm font-medium transition-colors"
+            >
+              ติดต่อเรา
+            </Link>
+          </div>
         </div>
       )}
     </header>

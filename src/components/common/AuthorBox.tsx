@@ -7,7 +7,7 @@ interface AuthorBoxProps {
 }
 
 export const AuthorBox: React.FC<AuthorBoxProps> = ({
-  reviewedDate = 'สิงหาคม 2567',
+  reviewedDate = 'พฤศจิกายน 2569',
   sourceLaw = 'ประกาศคณะกรรมการว่าด้วยสัญญา (สคบ.) พ.ศ. 2565 และ พ.ร.บ. รถยนต์ พ.ศ. 2522',
 }) => {
   return (
